@@ -15,8 +15,9 @@ J = 0;
 
 %need to add square and 1/2m
 Diff = ((X * theta) - y);
+%This gives us the scalar value of all differences squared and summed
 DiffSq =  Diff' * Diff ;
-J = (1/(2*m))*sum((DiffSq));
+J = (1/(2*m))*(DiffSq);
 
 % =========================================================================
 
