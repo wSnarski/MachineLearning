@@ -14,7 +14,9 @@ J = 0;
 %               You should set J to the cost.
 
 %need to add square and 1/2m
-J = (1/(2*m))*sum((X * theta) - y)
+Diff = ((X * theta) - y);
+DiffSq =  Diff' * Diff ;
+J = (1/(2*m))*sum((DiffSq));
 
 % =========================================================================
 
